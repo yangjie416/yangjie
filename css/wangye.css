@@ -1,0 +1,475 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.box {
+  width: 100%;
+  height: 2050px;
+}
+.box1 {
+  width: 95%;
+  height: 40px;
+  margin: 0px 40px;
+  background: rgb(206, 200, 200);
+  overflow: hidden;
+}
+.box1_1 {
+  width: 10%;
+  height: 10px;
+  margin-left: 920px;
+  margin-top: 10px;
+}
+.box1_2 {
+  width: 10px;
+  height: 10px;
+  margin-left: 1020px;
+  margin-top: -10px;
+}
+.box1_3 {
+  width: 300px;
+  height: 10px;
+  margin-left: 30px;
+  margin-top: -10px;
+}
+.box1_4 a {
+  text-decoration: none;
+  color: #000000;
+}
+.box1_4 {
+  margin-left: 1200px;
+  margin-top: -10px;
+}
+.box1_4:hover a {
+  width: 75px;
+  background: gray;
+  color: #f2f2f2;
+}
+.box2 {
+  width: 95%;
+  height: 90px;
+  margin: 0px 40px;
+  background: #ddd;
+}
+.box2_1 {
+  width: 500px;
+  height: 90px;
+  overflow: hidden;
+}
+.box2_1_1 {
+  width: 200px;
+  height: 60px;
+  margin: 10px 80px;
+}
+.box2_1_1 img {
+  width: 200px;
+  height: 60px;
+}
+.box2_2 {
+  width: 50%;
+  height: 60px;
+  margin-left: 600px;
+  margin-top: -70px;
+}
+.box2_2 ul {
+  list-style: none;
+}
+.box2_2 a {
+  text-decoration: none;
+  color: black;
+}
+.ULONE > li {
+  float: left;
+}
+.ULONE > li > a {
+  padding: 3px 10px;
+  border-radius: 20%;
+  line-height: 60px;
+}
+.ULONE > li > a:hover {
+  background: rgb(137, 137, 238);
+}
+.ULTWO {
+  display: none;
+  background: #dddddd;
+}
+.ULONE > li:hover .ULTWO {
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+.ULTWO > li > a {
+  padding: 0px 5px;
+}
+.ULTWO > li > a:hover {
+  color: blue;
+}
+.ULTWO > li > a {
+  text-align: center;
+}
+.menu {
+  width: 95%;
+  height: 50px;
+  margin: 0 auto;
+  display: none;
+  background-color: #ddd;
+  line-height: 50px;
+}
+.menu ul {
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  padding: 0px 50px;
+  color: black;
+  float: left;
+}
+.menu_pos {
+  display: none;
+}
+.totop {
+  width: 50px;
+  height: 50px;
+  background: rgb(255, 0, 0);
+  border-radius: 50%;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: none;
+  color: white;
+  font-family: 仿宋;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
+.box3 {
+  width: 95%;
+  height: 320px;
+  margin: 0px 40px;
+}
+#flash {
+  /*根据图片的大小来设置外层div的大小*/
+  width: 100%;
+  height: 320px;
+  margin: 0 auto;
+  position: relative; /*设置div定位，方便之后图片及圆点位置的设定*/
+  /* border: 1px solid black; */
+}
+#flash img {
+  width: 100%;
+  height: 320px;
+  position: absolute; /*设置所有图片重叠*/
+  left: 0px;
+  top: 0px;
+  display: none; /*设置所有图片隐藏，通过改变第一个图片的行间样式来使第一个图片显示*/
+}
+#flash ul {
+  width: 150px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 40%;
+  bottom: 10%;
+}
+#flash ul li {
+  width: 12px;
+  height: 12px;
+  margin-top: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 15px;
+  float: left;
+  list-style: none;
+}
+#flash ul .li_1 {
+  background-color: #f40; /*设置第一个圆点背景色为红色*/
+}
+#span-r {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: 2%;
+  top: 45%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#span-r span {
+  width: 100%;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: xx-large;
+  font-weight: 700;
+  line-height: 50px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+#span-l {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 2%;
+  top: 45%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#span-l span {
+  width: 100%;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: xx-large;
+  font-weight: 700;
+  line-height: 50px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.box4 {
+  width: 95%;
+  height: 20px;
+  background: #fff;
+  margin: 0px 40px;
+}
+.box5 {
+  width: 95%;
+  height: 343px;
+  margin: 0px 40px;
+}
+.box5 a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 5px;
+}
+.box5_1 {
+  width: 100%;
+  height: 110px;
+}
+.box5_1_1 {
+  width: 150px;
+  height: 109px;
+  margin: 0 auto;
+}
+.box5_1_1 img {
+  width: 150px;
+  height: 109px;
+}
+.box5_2 {
+  width: 100%;
+  height: 98px;
+}
+.box5_2_1 {
+  width: 30%;
+  height: 98px;
+  float: left;
+  margin-left: 80px;
+}
+.box5_01 {
+  width: 200px;
+  height: 98px;
+  overflow: hidden;
+}
+.box5_2_1 img {
+  width: 200px;
+  height: 98px;
+}
+.box5_01:hover img {
+  transform: scale(1.5, 1.5) skewX(180deg);
+  transition: 5s;
+}
+.box5_2_2 {
+  width: 30%;
+  height: 98px;
+  float: left;
+  margin-left: 10px;
+}
+.box5_02 {
+  width: 200px;
+  height: 98px;
+  overflow: hidden;
+}
+.box5_2_2 img {
+  width: 200px;
+  height: 98px;
+}
+.box5_02:hover img {
+  transform: scale(1.5, 1.5) skewY(180deg);
+  transition: 5s;
+}
+.box5_2_3 {
+  width: 30%;
+  height: 98px;
+  float: left;
+  margin-left: 10px;
+}
+.box5_03 {
+  width: 200px;
+  height: 98px;
+  overflow: hidden;
+}
+.box5_2_3 img {
+  width: 200px;
+  height: 98px;
+}
+.box5_03:hover img {
+  transform: scale(1.5, 1.5) skewX(135deg);
+  transition: 5s;
+}
+span {
+  font-size: 8px;
+}
+.box6 {
+  width: 95%;
+  height: 20px;
+  background: #fff;
+  margin: 0px 40px;
+}
+.box7 {
+  width: 95%;
+  height: 1024px;
+  background: #f2f2f2;
+  margin: 0px 40px;
+}
+.box7 p {
+  line-height: 23px;
+  letter-spacing: 7px;
+}
+.box7_1 {
+  width: 100%;
+  height: 341px;
+}
+.box7_2 {
+  width: 100%;
+  height: 341px;
+}
+.box7_3 {
+  width: 100%;
+  height: 341px;
+}
+.img1 {
+  margin-left: 500px;
+}
+.box7_01 {
+  width: 150px;
+  height: 105px;
+  overflow: hidden;
+}
+.box7_01 img {
+  width: 150px;
+  height: 105px;
+}
+.box7_01:hover img {
+  transform: scale(2, 2);
+  transition: 5s;
+}
+.box7_02 {
+  width: 150px;
+  height: 105px;
+  overflow: hidden;
+}
+.box7_02 img {
+  width: 150px;
+  height: 105px;
+}
+.box7_02:hover img {
+  transform: scale(2, 2);
+  transition: 5s;
+}
+.box7_03 {
+  width: 150px;
+  height: 105px;
+  overflow: hidden;
+}
+.box7_03 img {
+  width: 150px;
+  height: 105px;
+}
+.box7_03:hover img {
+  transform: scale(2, 2);
+  transition: 5s;
+}
+.box8 {
+  width: 95%;
+  height: 428px;
+  background: grey;
+  margin: 0px 40px;
+}
+.box8_1 {
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+}
+.box8_1_1 {
+  width: 120px;
+  height: 120px;
+  margin-left: 80px;
+  margin-top: 100px;
+}
+.box8_1_1 img: {
+  width: 120px;
+  height: 120px;
+}
+.box8_1 {
+  width: 500px;
+  height: 400px;
+}
+.box8_1_2 {
+  width: 150px;
+  height: 150px;
+  margin-left: 250px;
+  margin-top: -120px;
+}
+.box8_1_2 img {
+  width: 150px;
+  height: 150px;
+}
+.box8_2 {
+  width: 50%;
+  height: 60px;
+  margin-left: 450px;
+  margin-top: -300px;
+}
+.box8_2 ul {
+  list-style: none;
+}
+.box8_2 a {
+  text-decoration: none;
+  color: black;
+}
+.ul1 > li {
+  float: left;
+  padding: 10px 45px;
+  font-size: 18px;
+  color: #f2f2f2;
+}
+.ul2 > li > a {
+  padding: 0px 5px;
+}
+.ul2 > li > a:hover {
+  color: #f2f2f2;
+}
+.ul2 > li > a {
+  text-align: center;
+  font-size: 15px;
+}
+.box8_3 {
+  width: 50%;
+  height: 60px;
+  margin-left: 997px;
+  margin-top: -50px;
+}
+.box8_3 ul {
+  list-style: none;
+}
+.clearfix {
+  margin: 10px 0px;
+}
+.box9 {
+  width: 95%;
+  height: 73px;
+  background: black;
+  margin: 0px 40px;
+}
+.box9 p {
+  color: #fff;
+  text-align: center;
+  line-height: 73px;
+  font-size: 8px;
+}
